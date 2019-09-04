@@ -3,10 +3,10 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   # write your code here!
   organized_hash = {}
-  
+  attribute_array = []
   data.each_key do |attribute_key|
     #attribute_key will be :color, :gender, or :lives
-    
+    att
     data[attribute_key].each_key do |subattribute_key|
       
       data[attribute_key][subattribute_key].each do |name|
