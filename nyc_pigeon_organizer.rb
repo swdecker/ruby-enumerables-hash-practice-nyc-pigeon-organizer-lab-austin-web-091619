@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
       data[attribute_key][subattribute_key].each do |name|
         
         if organized_hash[name]
-          organized_hash[name][attribute_key].puts(subattribute_key)
+          organized_hash[name][attribute_key].push(subattribute_key)
       
         else
           organized_hash[name]={}
