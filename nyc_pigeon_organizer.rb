@@ -3,7 +3,7 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   # write your code here!
   organized_hash = {}
-  binding.pry
+  
   data.each_key do |attribute_key|
     #attribute_key will be :color, :gender, or :lives
     
