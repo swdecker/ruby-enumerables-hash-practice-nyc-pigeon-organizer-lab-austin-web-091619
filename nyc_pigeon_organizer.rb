@@ -10,7 +10,12 @@ def nyc_pigeon_organizer(data)
     data[attribute_key].each_key do |subattribute_key|
       
       data[attribute_key][subattribute_key].each do |name|
-        organized_hash[name][attribute_key]=[subattribute_key]
+        if organized_hash[name][attribute_key]
+          organized_hash[name][attribute_key]
+          
+        else
+          organized_hash[name][attribute_key]=[subattribute_key]
+        end
           
         
       end
