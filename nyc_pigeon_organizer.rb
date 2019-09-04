@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
       
       data[attribute_key][subattribute_key].each do |name|
         binding.pry
-        if organized_hash[name][attribute_key]
+        if organized_hash[name]
           organized_hash[name][attribute_key].puts(subattribute_key)
       
         else
