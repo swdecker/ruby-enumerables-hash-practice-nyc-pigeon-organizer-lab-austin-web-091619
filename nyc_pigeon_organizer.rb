@@ -13,12 +13,12 @@ def nyc_pigeon_organizer(data)
       
       data[attribute_key][subattribute_key].each do |name|
         
-        if organized_hash[name] && organized_hash[name][attribute_key]
+        if !organized_hash[name] && organized_hash[name][attribute_key]
           
-          binding.pry
+          #binding.pry
           organized_hash[name][attribute_key].push(subattribute_key)
           
-        elseif 
+        elsif organized_hash[name]
       
         else
           organized_hash[name]={}
