@@ -15,12 +15,12 @@ def nyc_pigeon_organizer(data)
         
         if !organized_hash[name]
           organized_hash[name]={}
-          organized_hash[name][attribute_key]=[subattribute_key]
+          organized_hash[name][attribute_key]=[subattribute_key.to_s]
         elsif !organized_hash[name][attribute_key]
           
-          organized_hash[name][attribute_key]=[subattribute_key]
+          organized_hash[name][attribute_key]=[subattribute_key.to_s]
         else
-          organized_hash[name][attribute_key].push(subattribute_key)
+          organized_hash[name][attribute_key].push(subattribute_key.to_s)
         end
           
         
