@@ -6,7 +6,8 @@ def nyc_pigeon_organizer(data)
   attribute_array = []
   data.each_key do |attribute_key|
     #attribute_key will be :color, :gender, or :lives
-    att
+    attribute_array.push(attribute_key)
+    binding.pry
     data[attribute_key].each_key do |subattribute_key|
       
       data[attribute_key][subattribute_key].each do |name|
@@ -24,6 +25,6 @@ def nyc_pigeon_organizer(data)
     end
     
   end
-  binding.pry
+  
   organized_hash
 end
