@@ -16,6 +16,7 @@ def nyc_pigeon_organizer(data)
         if organized_hash[name] && organized_hash[name][attribute_key]
           #binding.pry
           organized_hash[name][attribute_key].push(subattribute_key)
+        elseif 
       
         else
           organized_hash[name]={}
